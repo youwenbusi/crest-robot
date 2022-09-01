@@ -120,13 +120,8 @@ module.exports = {
     signerAddress: "0x6144C24F9Ba385328553E39Fb659e12DB10F16aa",
     //交易签名用户私钥
     signerKey: "",
-    //自动同步价格的间隔时间【syncPriceAuto脚本使用】
-    autoPriceSleepTime: 60 * 60 * 1000,
-    //自动兑换的休眠时间【swapAuto脚本使用】
-    autoSwapSleepTime: 5 * 1000,
-    //本轮兑换次数【swapAuto脚本使用】
-    autoSwapTimes: 15,
-
+    //自动检测区间的间隔时间【changeConfigAuto脚本使用】
+    autoSleepTime: 60 * 60 * 1000
 }
 
 
