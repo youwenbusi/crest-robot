@@ -1,29 +1,28 @@
-# 价格工具使用说明
 
-## 依赖库安装
-进入工程根目录执行
+## Dependency library installation
+Enter the project root directory and execute
 ```
 npm install
 ```
 
-## 脚本使用说明
+## Script usage instructions
 
-#### 自动调区间工具`changeConfigAuto.js`
-> 说明：本脚本自动检测当前价格是否已经接近当前策略区间边缘或者远远超出，则自动根据配置调区间
+#### Automatic tuning interval `changeConfigAuto.js`
+> Description: This script automatically detects whether the current price is close to the edge of the current strategy range or far beyond it, and automatically adjusts the range according to the configuration
 
-* 配置`config`
+* `config`
 
 ```
 //==============================
-//===自动调区间配置=====
+//===Automatic tuning interval configuration=====
 //==============================
-//自动检测区间的间隔时间（默认1小时）
+//The interval of the automatic detection interval (default 1 hour)
 autoSleepTime: 60 * 60 * 1000,
-//交易对（默认WETH-USDC）
+//pair（i.e: WETH-USDC）
 pairData: WETHUSDC,
 
 
-* 脚本执行
+* script execution
 
 ```
 node ./changeConfigAuto.js
